@@ -1,0 +1,194 @@
+menu, ul, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+a, #pPassword, #pAccount {
+    text-decoration: none;
+    font-size: 12pt;
+    transition: 1.0s;
+    color: white;
+}
+
+.header {
+    height: 40px;
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.header a:hover {
+    transition: 0.5s;
+    transform: rotateX(50);
+    color: rgb(15, 226, 15);
+}
+
+.header #pPassword:hover, #pAccount:hover {
+    transition: 0.5s;
+    transform: rotateX(50);
+    color: rgb(15, 226, 15);
+}
+
+/* header scroll effect  */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 98%;
+}
+
+.sticky+.grid {
+    padding-top: 100px;
+}
+
+/* side menu */
+
+.sideNavMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sideNavMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNavMenu a:hover {
+    transition: 0.5s;
+    color: rgb(15, 226, 15);
+}
+
+.sideNavMenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.login {
+    margin-top: 60px;
+}
+
+#email {
+    margin-left: 41px;
+}
+
+.login label {
+    color: white;
+    font-size: 15px;
+}
+
+#submitLogin {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 12pt;
+    color: white;
+    border-color: rgb(15, 226, 15);
+    border-style: groove;
+    background: grey;
+}
+
+.login a {
+    font-size: 12pt;
+    margin-right: 100px;
+}
+
+.switch {
+    margin-top: 240px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch a {
+    margin-left: 35px;
+    margin-top: -6px;
+    font-size: 12pt;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(15, 226, 15);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(15, 226, 15);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

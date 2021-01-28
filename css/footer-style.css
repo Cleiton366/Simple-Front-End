@@ -1,0 +1,30 @@
+/*Footer  */
+
+footer {
+    background: black;
+    height: 120px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer li {
+    color: white;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+footer img {
+    height: 32px;
+    width: 32px;
+}
+/*Footer hover */
+footer a:hover {
+    transition: 0.5s;
+    font-size: 12pt;
+    transform: rotateX(50);
+    color: rgb(15, 226, 15);
+}
+

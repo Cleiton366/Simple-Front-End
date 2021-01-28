@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="..\css\style-index.css">
+</head>
+
+<body>
+
+    <header class="header" id="myHeader">
+
+        <div id="sideNav" class="sideNavMenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="">Some feature</a>
+            <a href="">Some feature</a>
+            <a href="">Some feature</a>
+
+            <form action="" class="login">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email">
+                <label for="senha">PASSWORD:</label>
+                <input type="password" id="password">
+                <input type="submit" id="submitLogin" value="Sign in">
+                <a id="pPassword">Forgot your password?</a>
+                <a id="pAccount" href="">Create an account</a>
+            </form>
+        </div>
+        <a onclick="openNav()">MENU</a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="div-1">
+            <h1>
+                Buying from our store helps the planet <br>
+                10% of our monthly earnings goes to <br>
+                ONGs that are helping the planet. <br>
+            </h1>
+        </div>
+
+        <div id="div-2">
+            <h1 id="h1-1-div-2">
+                In 2019 we recovered 15% of the original <br>
+                size of the forest. Our goal is to recover <br>
+                38% of the forest by 2026
+            </h1>
+
+            <h1 id="h1-2-div-2">
+                Our institution have planted more than <br>
+                3.000 trees in the Vatnajökull-Yllästunturi <br>
+                National park since 2013, and we plan <br>
+                to plant more than 4.000 more trees <br>
+                until 2023.
+            </h1>
+        </div>
+
+        <div id="div-3">
+            <h1>
+                We care about the enviroment, that's why <br>
+                all our products are pesticide free.
+            </h1>
+        </div>
+
+        <div id="div-4">
+            <h1>
+                We support local farmers, 25% of our products <br>
+                come from small and medium farms from all <br>
+                over the country.
+            </h1>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <li><a href="">some-email@email</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some info goes here</a></li>
+        <li><a href="">Some info goes here</a></li>
+
+        <li><a href="https://www.facebook.com/">
+                <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/social-facebook-icon.png" alt="">
+            </a></li>
+        <li><a href="https://www.instagram.com/">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/174/174855.svg?token=exp=1611177868~hmac=f8a44673fe8943b053daac79f02771fc"
+                    alt="">
+            </a></li>
+    </footer>
+
+    <script>
+        /* header scroll effect  */
+        window.onscroll = function () { scrollFunc() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function scrollFunc() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        /* side menu */
+
+        function openNav() {
+            document.getElementById("sideNav").style.width = "270px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("footer").style.marginLeft = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("footer").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>

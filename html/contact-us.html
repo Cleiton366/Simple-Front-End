@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="..\css\style-contact-us.css">
+</head>
+
+<body>
+
+    <header class="header" id="myHeader">
+
+        <div id="sideNav" class="sideNavMenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="">Some feature</a>
+            <a href="">Some feature</a>
+            <a href="">Some feature</a>
+
+            <form action="" class="login">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email">
+                <label for="senha">PASSWORD:</label>
+                <input type="password" id="password">
+                <input type="submit" id="submitLogin" value="Sign in">
+                <a href="" id="pPassword">Forgot your password?</a>
+                <a href="" id="pAccount" href="">Create an account</a>
+            </form>
+
+            <label class="switch" id="darkModeSwitch">
+                <a href="">Dark Mode</a>
+                <input type="checkbox">
+                <span onclick="darkMode()" class="slider round"></span>
+
+            </label>
+
+        </div>
+        <a onclick="openNav()">MENU</a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="div-tittle">
+    </div>
+    <section class="grid" id="main">
+        
+        <div id="contact-us-info-01">
+            <h2>E-mail Address</h2>
+            <a class="A" id="a-main" href="mailto:email-example@email.com">email-example@email.com</a>
+        </div>
+        <div id="contact-us-info-02">
+            <h2>Phone Number</h2>
+            <a class="A" id="a-main" href="tel:99 999999">99 999999</a>
+        </div>
+        <div id="contact-us-info-03">
+            <h2>Our social midia</h2>
+            <a href="https://www.facebook.com/">
+                <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/social-facebook-icon.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/174/174855.svg?token=exp=1611177868~hmac=f8a44673fe8943b053daac79f02771fc"
+                    alt="">
+            </a>
+        </div>
+    </section>
+
+    <div id="contact-us-form">
+        <h2 id="h2-form">Get in touch by calling or using the form below.</h2>
+        <form action="" id="form">
+            <p>Fields marked with an<a id="Asterisk">*</a>are required</p>
+            <h3>Name<a id="Asterisk">*</a></h3>
+            <input type="text" id="form-name" required>
+            <h3>E-mail<a id="Asterisk">*</a></h3>
+            <input type="email" id="form-email" required>
+            <h3>Message<a id="Asterisk">*</a></h3>
+            <input type="text" id="form-message">
+            <br>
+            <button id="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <li><a href="">some-email@email</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some info goes here</a></li>
+        <li><a href="">Some info goes here</a></li>
+
+        <li><a href="https://www.facebook.com/">
+                <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/social-facebook-icon.png" alt="">
+            </a></li>
+        <li><a href="https://www.instagram.com/">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/174/174855.svg?token=exp=1611177868~hmac=f8a44673fe8943b053daac79f02771fc"
+                    alt="">
+            </a></li>
+    </footer>
+
+    <script>
+        /* header scroll effect  */
+        window.onscroll = function () { scrollFunc() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function scrollFunc() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        /* side menu */
+
+        function openNav() {
+            document.getElementById("sideNav").style.width = "270px";
+            document.getElementById("footer").style.marginLeft = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.getElementById("footer").style.marginLeft = "0";
+        }
+
+        function darkMode() {
+            var checkbox = document.querySelector('input[type="checkbox"]');
+            var pColor = document.getElementsByClassName("P");
+
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    document.body.style.backgroundColor = "rgb(40, 40, 40)";
+                   for(var i = 0; i < pColor.length; i++) pColor[i].style.color = "white";
+                } else {
+                    document.body.style.backgroundColor = "white";
+                    for(var i = 0; i < pColor.length; i++) pColor[i].style.color = "black";                 
+                }
+            })
+        }
+
+    </script>
+
+</body>
+
+</html>
