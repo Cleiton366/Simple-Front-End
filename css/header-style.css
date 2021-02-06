@@ -116,10 +116,10 @@ a, #pPassword, #pAccount {
     width: 120px;
     height: 40px;
     font-size: 12pt;
-    color: white;
-    border-color: rgb(15, 226, 15);
-    border-style: groove;
-    background: grey;
+    color: black;
+    border-style: none;
+    background: rgb(15, 212, 48);
+    border-radius: 12px;
 }
 
 .login a {
@@ -192,3 +192,24 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/*icons*/
+.fa-shopping-cart {
+    margin-right: 10px;
+}
+
+.fa-heart{
+    margin-right: 10px;
+}
+
+.fa-user{
+    margin-right: 10px;
+}
+
+.fa-bars{
+    font-size: 25pt;
+}
+
+
+
+

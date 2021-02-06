@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\css\style-create-acc.css">
+    <link rel="stylesheet" href="..\css\FontAwesome\css\all.css">
+    <script src="..\js\effects\openNav.js"></script>
+    <script src="..\js\effects\darkMode.js"></script>
+</head>
+
+<body>
+
+    <header class="header" id="myHeader">
+
+        <div id="sideNav" class="sideNavMenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="my-cart.html"><i class="fas fa-shopping-cart"></i>My Cart</a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i>My Wishlist</a>
+            <a href=""><i class="far fa-user"></i>My Account</a>
+
+            <form action="" class="login">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email">
+                <label for="senha">PASSWORD:</label>
+                <input type="password" id="password">
+                <input type="submit" id="submitLogin" value="Sign in">
+                <a href="..\html\forgot-acc.html" id="pPassword">Forgot your password?</a>
+                <a id="pAccount" href="..\html\create-acc.html">Create an account</a>
+            </form>
+
+            <label class="switch" id="darkModeSwitch">
+                <a href="">Dark Mode</a>
+                <input type="checkbox">
+                <span onclick="darkMode()" class="slider round"></span>
+
+            </label>
+
+        </div>
+        <a onclick="openNav()"><i class="fas fa-bars"></i></a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main">
+
+        <div class="small-container">
+
+            <div class="row" id="acc-form">
+                <form action="">
+                    <p class="P">Fields marked with an<a id="Asterisk"> * </a>are required</p>
+                    <h3 class="H3">Name<a id="Asterisk"> *</a></h3>
+                    <input type="text" id="acc-name" required>
+                    <h3 class="H3">E-mail<a id="Asterisk"> *</a></h3>
+                    <input type="email" id="acc-email" required>
+                    <h3 class="H3">Password<a id="Asterisk"> *</a></h3>
+                    <input type="password" id="acc-password" required>
+                    <br><br>
+                    <input type="checkbox" required>
+                    <p class="P" id="terms">By Signing up I agree to <a href="">Privacy Policy</a> and <a href="">Terms of
+                            Service</a></p>
+                    <input type="submit" id="sign-up-btn" value="Sign Up">
+                </form>
+            </div>
+
+            <div class="row">
+                <div>
+                    <img id="main-img"
+                        src="http://m.onisep.fr/var/onisep/storage/images/media/images/metier_fiches-ideo/horticulteur/17904480-1-fre-FR/horticulteur.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Katajanokanlaituri 2a, Helsinki</a></li>
+        <li><a href="">email-example@email.com</a></li>
+        <li><a href="">99 999999</a></li>
+
+        <li><a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-square" id="facebook-icon"></i>
+            </a></li>
+        <li><a href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+    </footer>
+
+</body>
+
+</html>
