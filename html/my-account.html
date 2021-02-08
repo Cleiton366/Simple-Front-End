@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="..\css\my-account.css">
+    <link rel="stylesheet" href="..\css\FontAwesome\css\all.css">
+    <script src="..\js\effects\openNav.js"></script>
+    <script src="..\js\effects\darkMode.js"></script>
+    <script src="..\js\effects\openImgUser.js"></script>
+</head>
+
+<body>
+    <header class="header" id="myHeader">
+
+        <div id="sideNav" class="sideNavMenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="my-cart.html"><i class="fas fa-shopping-cart"></i>My Cart</a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i>My Wishlist</a>
+            <a href="my-account.html"><i class="far fa-user"></i>My Account</a>
+
+            <form action="" class="login">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email">
+                <label for="senha">PASSWORD:</label>
+                <input type="password" id="password">
+                <input type="submit" id="submitLogin" value="Sign in">
+                <a href="..\html\forgot-acc.html" id="pPassword">Forgot your password?</a>
+                <a id="pAccount" href="..\html\create-acc.html">Create an account</a>
+            </form>
+
+            <label class="switch" id="darkModeSwitch">
+                <a href="">Dark Mode</a>
+                <input type="checkbox">
+                <span onclick="darkMode()" class="slider round"></span>
+
+            </label>
+
+        </div>
+        <a onclick="openNav()"><i class="fas fa-bars"></i></a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="main">
+        <div class="row">
+            <div class="small-container" id="send-user-img">
+                <a onclick="closeImgUser()"><i class="fas fa-times"></i></a>
+                <form action="" method='post' enctype='multipart/form-data'>
+                    <input type="file">
+                    <input type="submit" class="btn" id="send-btn" value="Change Photo">
+                </form>
+                <div id="new-user-img">
+                    <img id="new-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="small-container" id="user-info">
+            <div id="user-img-container">
+                <img id="user-img" src="https://www.lifestylesolutionsbyworldmark.com/img/global/icon-user.svg" alt="">
+            </div>
+            <a onclick="openImgUser()"><i class="fas fa-plus-square"></i></a>
+            <form action="">
+                <p class="P">User name:
+                    <input id="user-name" type="text" value="user-name">
+                </p>
+                <p class="P">E-mail:
+                    <input style="margin-left: 40px;" id="user-email" type="text" value="user-email">
+                </p>
+                <input type="submit" class="btn" id="save-btn" value="Save Changes">
+            </form>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Some article goes here</a></li>
+        <li><a href="">Katajanokanlaituri 2a, Helsinki</a></li>
+        <li><a href="">email-example@email.com</a></li>
+        <li><a href="">99 999999</a></li>
+
+        <li><a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-square" id="facebook-icon"></i>
+            </a></li>
+        <li><a href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+    </footer>
+
+
+    <script src="..\js\effects\scrollFunc.js"></script>
+</body>
+
+</html>

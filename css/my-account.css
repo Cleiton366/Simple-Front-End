@@ -1,0 +1,86 @@
+@import url(footer-style.css);
+@import url(header-style.css);
+body {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+.small-container {
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;    
+    flex-wrap: wrap;
+}
+
+.P, .A {
+    margin: 5px;
+    color: black;
+    text-align: center;
+}
+
+#user-info {
+    margin: 150px;
+}
+
+#user-img {   
+    width: 220px;
+    height: 220px;
+}
+
+.fa-plus-square{
+    margin-left: 250px;
+   margin-top: -150px;
+   font-size: 25pt;
+   color: black;
+}
+.fa-times{
+    margin-top: 10px;
+    margin-left: 400px;
+    font-size: 20pt;
+    color: white;
+}
+
+#send-user-img{
+    margin-left: -500px;
+    color: white;
+    background-color: black;
+    margin-bottom: -500px;
+    width: 450px;
+    height: 400px;
+}
+
+#new-user-img{
+    margin-top: -300px;
+    width: 250px;
+    height: 250px;
+}
+
+#send-user-img>form{
+    margin-right: 250px;
+}
+
+#send-btn{
+    margin-left: 350px;
+    margin-top: 270px;
+}
+
+#save-btn{
+    margin-left: 150px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    font-size: 12pt;
+    color: black;
+    border-style: none;
+    background: rgb(15, 212, 48);
+    border-radius: 12px;
+}
