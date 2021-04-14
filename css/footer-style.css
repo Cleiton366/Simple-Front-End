@@ -6,14 +6,12 @@ footer {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-wrap: wrap;
-    margin: 0 auto;
     text-align: center;
 }
 
 footer li {
     color: white;
-    margin-top: 30px;
-    margin-left: 60px;
+    margin: 30px;
 }
 
 footer img {

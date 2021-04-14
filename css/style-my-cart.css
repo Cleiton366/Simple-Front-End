@@ -59,4 +59,22 @@ div img:hover {
     margin-left: 20px;
 }
 
-/*featured/latest products*/
+/*Products you may like*/
+
+.row {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.featured-products, .latest-products{
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+}

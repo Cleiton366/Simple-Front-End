@@ -1,16 +1,6 @@
-@import url(header-style.css);
-@import url(footer-style.css);
-
-body {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: Arial;
-}
+@import url(global.css);
 
 img {
-    max-width: 100%;
     width: 600px;
     display: block;
 }
@@ -19,31 +9,32 @@ img {
     color: black;
     text-align: center;
 }
-
-.a-products{
-    color: black;
-    font-size: 14pt;
+h4, .P {
+    margin: 0;
 }
 
-/*CSS FLEXBOX/grid  products*/
-
-.grid {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-wrap: wrap;
-    max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
+#main {
+    margin: 50px;
 }
+
+.product {
+    width: 340px;
+    height: 400px;
+    max-width: 340px;
+    max-height: 400px;
+    background-color: rgba(59, 52, 52, 0.1);
+    border-radius: 12px;
+}
+
 /* zoom products img*/
-div img {
+img {
     padding: 50px;
     transition: transform .2s;
     width: 220px;
     height: 220px;
 }
 
-div img:hover {
+img:hover {
     transform: scale(1.1);
 }
 

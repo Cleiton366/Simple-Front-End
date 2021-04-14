@@ -70,6 +70,15 @@ form {
 
 #submit-btn {
     margin: 10px;
-    margin-right: 600px;
+    margin-right: 550px;
 }
 
+.btn {
+    width: 120px;
+    height: 40px;
+    font-size: 12pt;
+    color: black;
+    border-style: none;
+    background: rgb(15, 212, 48);
+    border-radius: 12px;
+}
