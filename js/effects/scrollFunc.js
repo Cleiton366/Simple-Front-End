@@ -1,7 +1,7 @@
 /* header scroll effect  */
 window.onscroll = function () { scrollFunc() };
 
-var header = document.getElementById("myHeader");
+var header = document.getElementById("header");
 var sticky = header.offsetTop;
 
 function scrollFunc() {

@@ -1,5 +1,6 @@
 @import url(header-style.css);
 @import url(footer-style.css);
+
 body {
     padding: 0px;
     margin: 0px;
@@ -9,6 +10,14 @@ body {
     list-style: none;
 }
 
+h4, .P {
+    margin: 0;
+}
+
+#main {
+    margin: 100px;
+}
+
 a {
     text-decoration: none;
 }
@@ -16,6 +25,11 @@ a {
 h1 {
     font-size: 20pt;
     color: white;
+}
+
+.P {
+    color: black;
+    text-align: center;
 }
 
 .grid {
@@ -49,6 +63,7 @@ h1 {
 }
 
 .featured-products, .latest-products{
+    transition: transform .2s;
     margin: 10px;
     border-radius: 12px;
     background-color: rgba(59, 52, 52, 0.1);
@@ -63,4 +78,28 @@ h1 {
 .products-img>img{
     width: 220px;
     height: 220px;
+}
+
+.product {
+    padding: 10px;
+    transition: transform .2s;
+    max-width: 340px;
+    max-height: 400px;
+    background-color: rgba(59, 52, 52, 0.1);
+    border-radius: 12px;
+}
+
+/* zoom products*/
+.product:hover, .latest-products:hover, .featured-products:hover{
+    transform: scale(1.1);
+}
+
+.grid>div {
+    flex: 1 0 200px;
+    margin: 10px;
+}
+
+.fa-trash {
+    color: red;
+    margin-left: 20px;
 }

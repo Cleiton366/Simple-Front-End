@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(style-slider.css);
 
 h4 {
     margin: 0;
@@ -22,6 +23,7 @@ h4 {
     height: 600px;
     background-size: cover;
 }
+
 #h1-1-div-2 {
     padding-top: 10vh;
     padding-right: 10vw;
@@ -57,7 +59,6 @@ h4 {
     text-align: right;
 }
 
-
 /*categories*/
 
 .categorie {
@@ -68,31 +69,32 @@ h4 {
 }
 
 .categorie>a>img {
-    width: 380px;
+    width: 360px;
     height: 500px;
-    min-width: 250px;  
+    min-width: 250px;
 }
 
 /*featured-offers*/
 
-.featured-offer{
+.featured-offer {
     margin: 50px;
 }
+
 .featured-offer>h2 {
     text-align: center;
 }
 
-.offer-info, .offer{
+.offer-info, .offer {
     margin: 20px;
 }
 
-.offer-info{
+.offer-info {
     text-align: center;
     margin-left: 120px;
     margin-top: 130px;
 }
 
-.offer>a>img{
+.offer>a>img {
     height: 400px;
     width: 400px;
 }
@@ -111,10 +113,10 @@ h4 {
 
 /*imgs-zoom effect*/
 
-.products-img>img, .categorie>a>img, .offer>a>img{
+.categorie>a>img, .offer>a>img {
     transition: transform .2s;
 }
 
-.products-img>img:hover, .categorie>a>img:hover, .offer>a>img:hover {
+.categorie>a>img:hover, .offer>a>img:hover {
     transform: scale(1.1);
 }

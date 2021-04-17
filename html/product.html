@@ -7,42 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="..\css\style-product.css">
     <link rel="stylesheet" href="..\css\FontAwesome\css\all.css">
-    <script src="..\js\effects\openNav.js"></script>
-    <script src="..\js\effects\darkMode.js"></script>
-    <script src="..\js\effects\imgEffectProduct.js"></script>
 </head>
 
 <body>
 
-    <header class="header" id="myHeader">
-
-        <div id="sideNav" class="sideNavMenu">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="my-cart.html"><i class="fas fa-shopping-cart"></i>My Cart</a>
-            <a href="wishlist.html"><i class="fas fa-heart"></i>My Wishlist</a>
-            <a href="my-account.html"><i class="far fa-user"></i>My Account</a>
-
-            <form action="" class="login">
-                <label for="email">EMAIL:</label>
-                <input type="email" id="email">
-                <label for="senha">PASSWORD:</label>
-                <input type="password" id="password">
-                <input type="submit" id="submitLogin" value="Sign in">
-                <a href="..\html\forgot-acc.html" id="pPassword">Forgot your password?</a>
-                <a id="pAccount" href="..\html\create-acc.html">Create an account</a>
-            </form>
-        </div>
-        <a onclick="openNav()"><i class="fas fa-bars"></i></a>
-
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="store.html">STORE</a></li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header" id="header"></header>
 
     <div class="product-info" id="main">
         <div class="small-container">
@@ -57,7 +26,8 @@
                             src="https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
                     </div>
                     <div>
-                        <img onclick="imgEffect()" class="small-img" src="https://st.hzcdn.com/simgs/d9416ccf06f4b02b_8-6481/home-design.jpg">
+                        <img onclick="imgEffect()" class="small-img"
+                            src="https://st.hzcdn.com/simgs/d9416ccf06f4b02b_8-6481/home-design.jpg">
                     </div>
                     <div>
                         <img onclick="imgEffect()" class="small-img"
@@ -140,25 +110,15 @@
         </div>
     </div>
 
-    <footer id="footer">
-        <li><a href="">Some article goes here</a></li>
-        <li><a href="">Some article goes here</a></li>
-        <li><a href="">Some article goes here</a></li>
-        <li><a href="">Katajanokanlaituri 2a, Helsinki</a></li>
-        <li><a href="">email-example@email.com</a></li>
-        <li><a href="">99 999999</a></li>
-
-        <li><a href="https://www.facebook.com/">
-                <i class="fab fa-facebook-square" id="facebook-icon"></i>
-            </a></li>
-        <li><a href="https://www.instagram.com/">
-                <i class="fab fa-instagram"></i>
-            </a></li>
-    </footer>
-
-    <script src="..\js\effects\scrollFunc.js"></script>
-
+    <footer id="footer"></footer>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="..\js\render\renderHeader.js"></script>
+<script src="..\js\render\renderFooter.js"></script>
+<script src="..\js\effects\scrollFunc.js"></script>
+<script src="..\js\effects\openNav.js"></script>
+<script src="..\js\effects\darkMode.js"></script>
 
 </html>
